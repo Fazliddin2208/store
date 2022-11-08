@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    height: 89vh;
+    width: 300px;
+    background-color: #3D639D;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    border-top-right-radius: 20px;
+
+    &__menu {
+        position: relative;
+        width: 90%;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            place-content: flex-start;
+            padding: 1rem 0rem 1rem 2rem;
+            font-size: 17px;
+            font-weight: 500;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+
+            &.active {
+                color: #3D639D;
+            }
+
+            &__icon {
+                margin-right: 1rem;
+
+                i {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+
+        &__indicator {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            // width: calc(100% - 40px);
+            width: 100%;
+            border-radius: 30px 0 0 30px;
+            background-color: #fff;
+            z-index: -1;
+            transform: translateX(-50%);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 9.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+
+    h2{
+        margin-left: 70px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+
+    div{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fa-bell{
+            color: #7e7e7e;
+            font-size: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        button{
+            width: 85%;
+            height: 100%;
+            border: none;
+            border-bottom-left-radius: 20px;
+            background-color: #3D639D;
+            a{
+                color: #fff;
+                font-size: 15px;
+                text-decoration: none;
+                i{
+                    margin-left: 10px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
