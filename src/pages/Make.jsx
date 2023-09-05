@@ -30,7 +30,7 @@ const Make = () => {
     },[products])
 
     const getProducts = async()=>{
-        await axios.get(`https://dummyjson.com/products?limit=10&skip=${page*10-10}`)
+        await axios.get(`https://dummyjson.com/products?limit=20&skip=${page*20-20}`)
         .then(res=>{
             const products = res.data
             // console.log(products.products)
