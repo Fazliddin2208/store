@@ -95,7 +95,7 @@ const Make = () => {
                     </Card>
                 ))}         
                 <Pagination 
-                    count={totals/10} 
+                    count={totals/20} 
                     defaultPage={page} 
                     color="success" 
                     shape="rounded" 
